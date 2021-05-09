@@ -15,7 +15,27 @@ button, input {
 }
 span{
     color:#182867 ;
-
+}
+.d-flex{
+    display: flex;
+}
+.text-red{
+    color: red;
+}
+.align-items-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    background: #f7f1ff;
+    background: -webkit-linear-gradient(to right, #6b9dd0, #e8b6bc, #fad0ce);
+    background: linear-gradient(to right,  #6b9dd0, #e8b6bc, #fad0ce);
+    position: absolute;
+}
+.min-vh-100{
+    height:100%;
+    width: 100%;
 }
 /* -----Main Wrapper----- */
 #bx-login{
@@ -25,6 +45,10 @@ span{
     justify-content: center;
     position: relative;
     margin: 40px auto;
+}
+.bg-grey{
+    background-color:rgba(155, 149, 149, 0.994) !important;
+
 }
 @media screen and (max-width : 800px){
     #bx-login{
@@ -62,7 +86,7 @@ span{
     border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.789);
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.426);
+    background-color: rgba(255, 255, 255, 0.782);
     top: 20px;
 }
 @media screen and (max-width : 800px){
@@ -75,7 +99,7 @@ span{
         height: 200px;
         border-radius: 1rem;
         border: 0.9px solid rgb(233, 232, 232);
-        background-color: rgba(255, 255, 255, 0.618);
+        background-color: rgba(255, 255, 255, 0.782);
         position: absolute;
         top: 20px;
         }
@@ -167,6 +191,10 @@ span{
     cursor:pointer;
     color:#182867 ;
 }
+.bbt-red{
+    border-bottom: 2px solid #c52f0d !important;
+
+}
 
 
 /* -----Button BOTTOM On index.js------ */
@@ -182,7 +210,7 @@ span{
     line-height: 2rem;
     margin: 0 auto;
     padding: 10px;
-    background-color: #f7f1ff;
+    /* background-color: #f7f1ff; */
     box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
 }
 .box-sign-up{
@@ -198,13 +226,9 @@ span{
     margin-bottom: auto;
     font-weight: 400;
     color: #182867;
-    background-color: #fdcfd2;
+    background-color: #f7f1ff;
     cursor: pointer;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-     opacity: 1;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
 }
 .box-sign-in{
     display: grid;
@@ -216,13 +240,10 @@ span{
     width: 90%;
     height: 45%;
     color: #182867;
-    background-color: #fdcfd2;
+    background-color: #f7f1ff;
     cursor: pointer;
-    -webkit-transition: opacity 0.39s ease-in-out;
-    -moz-transition: opacity 0.39s ease-in-out;
-    -ms-transition: opacity 0.39s ease-in-out;
-    -o-transition: opacity 0.39s ease-in-out;
-     opacity: 1;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+
 }
 
 /* -----Image Chill----- */
@@ -230,4 +251,22 @@ span{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     margin: auto;
+}
+.spin{
+    width:20px;
+    height: 20px;
+    animation-name: spin;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

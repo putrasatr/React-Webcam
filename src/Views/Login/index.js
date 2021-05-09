@@ -19,27 +19,27 @@ function Login() {
     setSignin(false)
   }
   return (
-    <div id="bx-login">
-      <div id="image">
+    <main className="d-flex align-items-center min-vh-100 py-3 py-md-0">
+      <div id="bx-login">
         <BgLogin />
-      </div>
-      {signin ? <SignIn /> : signin == null ? " " : <SignUp />}
-      <div>
-        <div id="box-button">
-          <div className={signup ? "d-none" : "box-sign-up"} onClick={handleSignup}>
-            <div id="btn-sign-up" >
-              <small>Don't Have Account ?</small>
-              <span>Sign Up</span>
+        {signin ? <SignIn /> : signin == null ? " " : <SignUp />}
+        <div>
+          <div id="box-button">
+            <div className={signup ? "d-none" : "box-sign-up"} onClick={handleSignup}>
+              <div id="btn-sign-up" >
+                <small>Don't Have Account ?</small>
+                <span>Sign Up</span>
+              </div>
             </div>
-          </div>
-          <div className={signin ? "d-none" : "box-sign-in"} id="" onClick={handleSignin}>
-            <div id="btn-sign-in">
-              <span>Sign In</span>
+            <div className={signin ? "d-none" : "box-sign-in"} id="" onClick={handleSignin}>
+              <div id="btn-sign-in">
+                <span>Sign In</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
